@@ -35,12 +35,15 @@ app.use(session({
   
 
 
-app.use(express.static('public'));//easier to access ejs with this 
+
+  app.use(express.static(__dirname + "public"));
 
 //Templating Engine
 app.use(expressLayout);
 app.set('layout', './layouts/main');
-app.set('view engine','ejs');
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
+
 
 //note not all routes will be in app.js else it will get messy 
 //rest of the routes will be in server folder
