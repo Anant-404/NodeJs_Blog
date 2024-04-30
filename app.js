@@ -34,15 +34,16 @@ app.use(session({
   }));
   
 
-
-
-  app.use(express.static(__dirname + "public"));
+  app.use(expressLayout);
+  app.set('layout', './layouts/main');
+  app.set("views", __dirname + "/views");
+  
 
 //Templating Engine
-app.use(expressLayout);
-app.set('layout', './layouts/main');
-app.set("views", __dirname + "/views");
+
+
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "public"));
 
 
 //note not all routes will be in app.js else it will get messy 
