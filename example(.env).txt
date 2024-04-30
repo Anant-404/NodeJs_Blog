@@ -1,0 +1,2 @@
+MONGODB_URI=mongodb+srv://<your data base id>:<your database password>@cluster0.swborn7.mongodb.net/blog
+JWT_SECRET=MySecretBlog
