@@ -13,7 +13,7 @@ const { isActiveRoute } = require('./server/helpers/routeHelpers');
 
 
 const app=express();
-const PORT=5000 || process.env.PORT;//to use their defined port where we will host
+const PORT=8080 || process.env.PORT;//to use their defined port where we will host
 
 
 //connect to database
