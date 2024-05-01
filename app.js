@@ -35,7 +35,7 @@ app.use(session({
   
 
   app.use(expressLayout);
-  app.set('layout',  __dirname + "/views/layouts/main");
+  app.set("layout",  __dirname + "/views/layouts/main");
   app.set("views", __dirname + "/views");
   
 
